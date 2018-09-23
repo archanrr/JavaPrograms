@@ -1,9 +1,22 @@
 import java.util.*;
-class sampleJavafile
+import java.*;
+
+public class sampleJavafile
 {
 	public static void main(String[] args) {
-		int d;
-		d=50;
-		System.out.print(d);
+		int k=0;
+		try
+		{
+			int a=12/k;
+			System.out.println(a);
+		}
+		catch(NullPointerException e)
+		{
+			System.out.println(e);
+		}
+		finally
+		{
+			System.out.println("finally reached");
+		}
 	}
 }
